@@ -30,6 +30,10 @@ body {
 }
 
 main {
+  /*width: 40rem;*/
+  font-family: "Booksans";
+  font-size: 11pt;
+  line-height: 1.4rem;
   padding: 2rem;
 }
 
@@ -44,11 +48,12 @@ p {
 }
 
 nav {
-  background-color: midnightblue;
+  background-color: #aaccff;
   color: white;
   padding: 1rem;
   margin: 0rem 0rem;
   margin-bottom: -1rem;
+  text-align: center;
 }
 
 nav ul {
@@ -58,16 +63,38 @@ nav ul {
 
 nav li {
   display: inline;
-  margin-right: 0rem;
+  margin: 0 0;
+  /*margin-bottom: 0.2rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0.8rem;*/
+  margin-top: 0.2rem;
   padding: 1rem;
+  padding-top: 0.8rem;
+}
+
+nav li:hover {
+  background-color: floralwhite;
+  color: white;
+  margin: 0;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+  /*border: 0rem solid;*/
+  border-radius: 0.5rem;
 }
 
 nav a {
-  color: white;
+  color: midnightblue;
   text-decoration: none;
 }
 
-.current {
-  background-color: gray;
+li.current, li:hover.current {
+  background-color: floralwhite;
   color: black;
+  /*border: 0rem solid floralwhite;*/
+  border-radius: 0.5rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-bottom: 1rem;
 }
